@@ -217,9 +217,7 @@ void initSDL() {
 
   loadSprites();
 
-  if ( SDL_InitSubSystem(SDL_INIT_JOYSTICK) >= 0 ) {
-    stick = SDL_JoystickOpen(0);
-  }
+  stick = NULL;
 
   SDL_ShowCursor(SDL_DISABLE);
 }
